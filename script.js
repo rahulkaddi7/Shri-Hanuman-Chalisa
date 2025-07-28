@@ -10,12 +10,12 @@
                     `<hr class="border-t-2 border-white opacity-50 my-8"><div class="mt-8 text-center"><p class="text-2xl font-devanagari leading-relaxed font-bold">पवनतनय संकट हरन मंगल मूरति रूप ।</p><p class="mt-2 font-light">O Son of the Wind, vanquisher of sorrows, embodiment of blessings,</p><p class="text-2xl font-devanagari leading-relaxed mt-4 font-bold">राम लखन सीता सहित हृदय बसहु सुर भूप ॥</p><p class="mt-2 font-light">Dwell in my heart, O King of Gods, along with Rama, Lakshmana, and Sita.</p></div>`,
                     `<hr class="border-t-2 border-white opacity-50 my-8">
                     <div class="grid grid-cols-3 md:grid-cols-3 gap-x-8 md:text-left">
-                        <p class="text-2xl font-devanagari leading-relaxed text-gray-900 font-bold ml-6">श्री राम जय राम जय जय राम</p>
-                        <p class="text-2xl font-devanagari leading-relaxed text-gray-900 font-bold ml-6">श्री राम जय राम जय जय राम</p>
-                        <p class="text-2xl font-devanagari leading-relaxed text-gray-900 font-bold ml-6">श्री राम जय राम जय जय राम</p>
-                        <p class="text-2xl font-devanagari leading-relaxed text-gray-900 font-bold mt-2 ml-6">श्री राम जय राम जय जय राम</p>
-                        <p class="text-2xl font-devanagari leading-relaxed text-gray-900 font-bold mt-2 ml-6">श्री राम जय राम जय जय राम</p>
-                        <p class="text-2xl font-devanagari leading-relaxed text-gray-900 font-bold mt-2 ml-6">श्री राम जय राम जय जय राम</p>
+                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold ml-6">श्री राम जय राम जय जय राम</p>
+                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold ml-6">श्री राम जय राम जय जय राम</p>
+                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold ml-6">श्री राम जय राम जय जय राम</p>
+                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold mt-3 ml-6">श्री राम जय राम जय जय राम</p>
+                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold mt-3 ml-6">श्री राम जय राम जय जय राम</p>
+                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold mt-3 ml-6">श्री राम जय राम जय जय राम</p>
                     </div>`
                 ]
             },
@@ -30,9 +30,9 @@
                         <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold ml-6">ಶ್ರೀ ರಾಮ ಜಯ ರಾಮ ಜಯ ಜಯ ರಾಮ</p>
                         <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold ml-6">ಶ್ರೀ ರಾಮ ಜಯ ರಾಮ ಜಯ ಜಯ ರಾಮ</p>
                         <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold ml-6">ಶ್ರೀ ರಾಮ ಜಯ ರಾಮ ಜಯ ಜಯ ರಾಮ</p>
-                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold mt-2 ml-6">ಶ್ರೀ ರಾಮ ಜಯ ರಾಮ ಜಯ ಜಯ ರಾಮ</p>
-                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold mt-2 ml-6">ಶ್ರೀ ರಾಮ ಜಯ ರಾಮ ಜಯ ಜಯ ರಾಮ</p>
-                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold mt-2 ml-6">ಶ್ರೀ ರಾಮ ಜಯ ರಾಮ ಜಯ ಜಯ ರಾಮ</p>
+                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold mt-3 ml-6">ಶ್ರೀ ರಾಮ ಜಯ ರಾಮ ಜಯ ಜಯ ರಾಮ</p>
+                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold mt-3 ml-6">ಶ್ರೀ ರಾಮ ಜಯ ರಾಮ ಜಯ ಜಯ ರಾಮ</p>
+                        <p class="text-l font-devanagari leading-relaxed text-gray-900 font-bold mt-3 ml-6">ಶ್ರೀ ರಾಮ ಜಯ ರಾಮ ಜಯ ಜಯ ರಾಮ</p>
                     </div>`
                 ]
             }

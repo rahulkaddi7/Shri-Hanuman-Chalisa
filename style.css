@@ -1,0 +1,76 @@
+/* Custom styles for typography and layout */
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+.font-devanagari {
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+.font-kannada {
+    font-family: 'Noto Sans Kannada', sans-serif;
+}
+.hero-section {
+    height: 100vh;
+    /* Background image path updated */
+    background-image: url('assets/images/image.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+}
+.chalisa-section {
+    background-color: #FF9933; /* Saffron background */
+    position: relative; /* Needed for anchor positioning */
+    padding-top: 80px; /* Offset for fixed navbar */
+}
+.logo{
+    /* font-family: 'Brush Script MT', cursive; */
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+/* Animation for the scroll down arrow */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+.animate-bounce-slow {
+    animation: bounce 2s infinite;
+}
+/* Styles for the Back to Top button */
+#back-to-top-btn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: translateY(10px);
+}
+#back-to-top-btn.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Custom styles for the audio player */
+audio {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* Language Modal Styles */
+#language-modal {
+    transition: opacity 0.3s ease;
+}
+/* Responsive background fix */
+@media (max-width: 768px) {
+    .hero-section {
+        background-attachment: scroll;
+    }
+}

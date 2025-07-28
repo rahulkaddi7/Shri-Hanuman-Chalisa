@@ -1,6 +1,4 @@
 
-        // --- Language Data ---
-        // MODIFIED: Removed the 'hi' (Hindi) translation object
         const translations = {
             en: {
                 chalisa_title:"Shri Hanuman Chalisa", chalisa_subtitle: "Jai Shree Ram", language: "Kannada",
@@ -40,26 +38,20 @@
             }
         };
 
-        // --- Get DOM Elements ---
         const languageModal = document.getElementById('language-modal');
         const chalisaContainer = document.getElementById('chalisa-text-container');
         const languageBtn = document.getElementById('language-btn');
-        // MODIFIED: languageDropdown element is no longer needed.
 
-        // --- Language Logic ---
         function setLanguage(lang) {
-            // Update all simple text elements
             document.querySelectorAll('[data-key]').forEach(element => {
                 const key = element.getAttribute('data-key');
                 if (translations[lang] && translations[lang][key]) {
                     element.textContent = translations[lang][key];
-                     // Apply language-specific font classes
                     if (lang === 'kn') {
                         element.classList.add('font-kannada');
                         element.classList.remove('font-devanagari');
                     } else { // 'en'
                         element.classList.remove('font-kannada');
-                        // Keep devanagari for the main title if needed, or remove
                         if (key !== 'main_title') {
                            element.classList.remove('font-devanagari');
                         }
@@ -67,7 +59,6 @@
                 }
             });
 
-            // Update the Chalisa text block
             if (translations[lang] && translations[lang].verses) {
                 chalisaContainer.innerHTML = translations[lang].verses.join('');
             }
@@ -82,28 +73,22 @@
             setTimeout(() => languageModal.classList.add('hidden'), 300);
         }
         
-        // --- NEW: Navbar Language Toggle Logic ---
-        // This replaces the old dropdown logic.
         languageBtn.addEventListener('click', () => {
             const currentLang = document.documentElement.lang || 'en';
             const newLang = currentLang === 'en' ? 'kn' : 'en';
             setLanguage(newLang);
         });
 
-        // --- Initial Page Load Logic ---
         const savedLang = localStorage.getItem('preferredLanguage');
         if (savedLang) {
-            // If language is saved, set it and hide modal immediately
-            setLanguage(savedLang); // Use setLanguage directly
+            setLanguage(savedLang); 
             languageModal.classList.add('hidden');
         } else {
-            // If no language is saved, show the pop-up modal
             languageModal.classList.remove('hidden');
             languageModal.style.opacity = '1';
-            setLanguage('en'); // Default to English before selection
+            setLanguage('en'); 
         }
 
-        // --- Recitation Counter Logic ---
         const countElement = document.getElementById('recitation-count');
         const incrementBtn = document.getElementById('increment-btn');
         const resetBtn = document.getElementById('reset-btn');
@@ -122,11 +107,9 @@
             }
         });
 
-        // --- Back to Top Button Logic ---
         const backToTopBtn = document.getElementById('back-to-top-btn');
         const chalisaSection = document.getElementById('chalisa-content');
         window.addEventListener('scroll', () => {
-            // Show button if scrolled past the hero section
             if (window.scrollY > (chalisaSection.offsetTop - 100)) {
                 backToTopBtn.classList.add('show');
             } else {
